@@ -1,0 +1,19 @@
+/* 这个等同于
+className="
+h-0: height: 0;
+w-0: width: 0;
+border-b-[30px]: border-bottom-30px ;
+border-l-[20px]: border-left: 20px;
+border-r-[20px]: border-right: 20px
+border-b-black: border-bottom: black;
+border-l-transparent: border-left: transparent;
+border-r-transparent: border-right: transparent;
+"
+*/
+.shape {
+    height: 0;
+    width: 0;
+    border-bottom: 30px solid black;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}

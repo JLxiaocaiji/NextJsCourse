@@ -1,4 +1,6 @@
+// 链接数据库
 const { db } = require('@vercel/postgres');
+// 创建并编辑 4 张表
 const {
   invoices,
   customers,

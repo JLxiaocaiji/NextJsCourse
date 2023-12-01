@@ -34,6 +34,10 @@ export async function fetchRevenue() {
 
 export async function fetchLatestInvoices() {
   try {
+    /*
+    sql<LatestInvoiceRaw> 是 TypeScript 中的一种类型注解，它表示这个 SQL 查询的结果
+    应该被解析为 LatestInvoiceRaw 类型
+    */
     const data = await sql<LatestInvoiceRaw>`
       SELECT invoices.amount, customers.name, customers.image_url, customers.email, invoices.id
       FROM invoices
